@@ -12,7 +12,7 @@ class UI {
     }
 
     paint(weather) {
-        this.location.textContent = weather.name;
+        this.location.textContent = `${weather.name} - ${weather.sys.country}`;
         this.desc.textContent = weather.weather[0].main;;
         this.string.textContent = weather.main.temp + "℃";
         //*****************
